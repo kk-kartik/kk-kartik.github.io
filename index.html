@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Kartik Kurupaswamy
+        </title>
+        <link rel="icon" href="svg/logoG.gif">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/099dc0ed07.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a> </li>
+                    <li><a>About Me</a> </li>
+                    <li><a>Projects</a></li>
+                    <li><a href="#gallery">Gallery</a> </li>
+                    <li><a href="#contact">Contact Me</a> </li>
+                </ul>   
+            </nav>
+        </div>
+        <div class="home" id="home">
+            <div class="mverse">The fear of the Lord <br> is the beginning of knowledge</div>
+            <div class="mintro">Hello I'm <br> <span class="typ"></span></div>
+        </div>
+        <div class="gallery" id="gallery">
+            <div class="hg"><h2>Gallery</h2></div>
+            <div class="fullimg" id="fullimg">
+                <img src="svg/img.jpg" id="Img">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div class="imggallery">
+                <img src="svg/img.jpg" onclick="openImg(this.src)">
+                <img src="svg/cc.png" onclick="openImg(this.src)">
+                <img src="svg/img.jpg" onclick="openImg(this.src)">
+                <img src="svg/img.jpg" onclick="openImg(this.src)">
+                <img src="svg/img.jpg" onclick="openImg(this.src)">
+                <img src="svg/img.jpg" onclick="openImg(this.src)">
+                <img src="svg/img.jpg" onclick="openImg(this.src)">
+                <img src="svg/img.jpg" onclick="openImg(this.src)">
+            </div>
+           
+        </div>
+        <div class="ContactMe" id="contact">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Contact Me</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email Id" required>
+                <input type="tel" id="phone" placeholder="Phone No." required>
+                <textarea id="msg" rows="5" placeholder="How can I help you?"></textarea>
+                <button type="submit"> Submit</button>
+            </form>
+            
+        </div>
+        <div class="footer" id="footer">
+            <div class="col-1">
+                <h3>USEFUL LINKS</h3>
+                <a target="_blank" href="https://iitg.ac.in/">IIT Guwahati</a>
+                <a target="_blank" href="https://iitg.ac.in/maths/">Dept. of Mathematics</a>
+                <a target="_blank" href="https://www.msubaroda.ac.in/">MSU Vadodara</a>
+                <a target="_blank" href="https://iitg.ac.in/gate-jam/">GATE</a>
+                <a></a>
+            </div>
+            <div class="col-2">
+                <h3>SOCIAL LINKS</h3>
+                <div class="social-links">
+                    <a target="_blank" href="https://in.linkedin.com/in/kartikkk"><i class="fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://wa.me/919427686046"><i class="fab fa-whatsapp"></i></a>
+                    <a target="_blank" href="https://telegram.me/Kikretsu"><i class="fab fa-telegram"></i></a>
+                    <br> 
+                    <a target="_blank" href="https://github.com/kartik777k"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://auth.geeksforgeeks.org/user/kartikkurupaswamy/practice/"><img src="svg/gfg.png"></a>
+                    <a target="_blank" href="https://www.codechef.com/users/kat777"><img src="svg/cc.png"></a>
+                </div>
+                
+                
+            </div>
+            <div class="col-3">
+                <h3>CONTACT</h3>
+                <i class="fa-solid fa-location-dot"> <p>RCL 92/1054<br> Chanod Colony, G.I.D.C.<br> Vapi, GUJARAT, INDIA</p></i>
+                <br>
+                <i class="fa-solid fa-phone">9662164080<br> 9427686046  </i> 
+            </div>
+
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="javascript/index.js"></script>
+    </body>
+</html>
