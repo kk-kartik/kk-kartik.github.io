@@ -1,8 +1,8 @@
 var typed=new Typed(".typ",{
     strings: ["Kartik Kurupaswamy"],
-    typeSpeed:150,
-    backSpeed:10,
-    loop:false,
+    typeSpeed:200,
+    backSpeed:15,
+    loop:true,
 });
 
 var fullImg=document.getElementById("fullimg");
