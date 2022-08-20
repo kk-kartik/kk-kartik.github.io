@@ -1,122 +1,194 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Kartik Kurupaswamy
-        </title>
-        <link rel="icon" href="svg/logoG.gif">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=My+Soul&family=Press+Start+2P&family=Rye&family=Satisfy&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/099dc0ed07.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="header">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a> </li>
-                    <li><a href="#about">About Me</a> </li>
-                    <li><a href="#footer">Projects</a></li>
-                    <li><a href="#gallery">Gallery</a> </li>
-                    <li><a href="#contact">Contact Me</a> </li>
-                </ul>   
-            </nav>
+  <head>
+    <title>Kartik Kurupaswamy</title>
+    <link rel="icon" href="svg/logog.png" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=My+Soul&family=Press+Start+2P&family=Rye&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/099dc0ed07.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header" id="header">
+      <nav>
+        <img class="lgh" src="svg/logog.png" />
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="home" id="home">
+      <div class="mverse">
+        The fear of the Lord is the beginning of knowledge
+      </div>
+      <div class="mintro">
+        Hi I'm <br />
+        <span class="typ"></span>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="minfo">
+        <div class="infoimg">
+          <img class="dir" src="svg/imgdr.jpg" />
         </div>
-        <div class="home" id="home">
-            <div class="mverse">The fear of the Lord is the beginning of knowledge</div>
-            <div class="mintro">Hi I'm <br> <span class="typ"></span></div>
+        <div class="info">
+          <div class="hg1">About Me</div>
+          <p>
+            My name is Kartik Kurupaswamy. I have lived in both Tamil Nadu and
+            Gujarat. Some of my favorite things to do are read, listen to music,
+            and ride public transportation (buses and trains). These are
+            activities that I enjoy immensely and indulge in daily. My career
+            aspirations is to become a Software engineer. I look up mostly to my
+            great God and my family members, especially my mom, as a guiding
+            figure in life.
+          </p>
         </div>
-        <div class="about" id="about">
-            <div class="hg">A Little About Me</div>
-            <div class="minfo">
-                <div class="info">
-                 <p>   My name is Kartik Kurupaswamy. I have lived in both Tamil Nadu and Gujarat.
-                Some of my favorite things to do are read, 
-                listen to music, and ride public transportation (buses and trains).
-                These are activities that I enjoy immensely and indulge in daily.
-                My career aspirations is to become a Software
-                engineer.  I look up mostly to my great God and my family members, especially
-                my mom, as a guiding figure in life.</p>
-                </div>
-                <div class="infoimg">
-                    <img class="dir" src="svg/imgdr.jpg">
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="hg2">Projects</div>
+      <div class="pr">
+        <div class="col1"><img id="primg" class="primg" /></div>
+        <div class="col2">
+          <div id="prtitle"></div>
+          <div id="prdesc"></div>
+          <div id="prpoints">
+            <ul id="prpointsul"></ul>
+          </div>
+          <div id="prstack"></div>
+          <a target="_blank" id="prweb">Website Link</a>
+          <a target="_blank" id="prcode">Github Link</a>
         </div>
-        <div class="gallery" id="gallery">
-            <div class="hg">Gallery</div>
-            <div class="fullimg" id="fullimg">
-                <img src="svg/img.jpg" id="Img">
-                <span onclick="closeImg()">X</span>
-            </div>
-            <div class="imggallery">
-                <img src="img/img1.jpg" onclick="openImg(this.src)">
-                <img src="img/img2.jpg" onclick="openImg(this.src)">
-                <img src="img/img3.jpg" onclick="openImg(this.src)">
-                <img src="img/img4.jpg" onclick="openImg(this.src)">
-                <img src="img/img5.jpg" onclick="openImg(this.src)">
-                <img src="img/img6.jpg" onclick="openImg(this.src)">
-                <img src="img/img7.jpg" onclick="openImg(this.src)">
-                <img src="img/img8.jpg" onclick="openImg(this.src)">
-            </div>
-           
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div class="gallery" id="gallery">
+      <div class="hg3">Gallery</div>
+      <div class="fullimg" id="fullimg">
+        <img src="svg/img.jpg" id="Img" />
+        <span onclick="closeImg()">X</span>
+      </div>
+      <div class="imggallery">
+        <img src="img/img1.jpg" onclick="openImg(this.src)" />
+        <img src="img/img2.jpg" onclick="openImg(this.src)" />
+        <img src="img/img3.jpg" onclick="openImg(this.src)" />
+        <img src="img/img4.jpg" onclick="openImg(this.src)" />
+        <img src="img/img5.jpg" onclick="openImg(this.src)" />
+        <img src="img/img6.jpg" onclick="openImg(this.src)" />
+        <img src="img/img7.jpg" onclick="openImg(this.src)" />
+        <img src="img/img8.jpg" onclick="openImg(this.src)" />
+      </div>
+    </div>
+    <div class="ContactMe" id="contact">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>Get in Touch</h3>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Email Id" required />
+        <input type="tel" id="phone" placeholder="Phone No." required />
+        <textarea
+          id="msg"
+          rows="5"
+          placeholder="How can I help you?"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="footer" id="footer">
+      <div class="col-1">
+        <h3>USEFUL LINKS</h3>
+        <a target="_blank" href="https://iitg.ac.in/">IIT Guwahati</a>
+        <a target="_blank" href="https://iitg.ac.in/maths/"
+          >Dept. of Mathematics</a
+        >
+        <a target="_blank" href="https://www.msubaroda.ac.in/">MSU Vadodara</a>
+        <a target="_blank" href="https://iitg.ac.in/gate-jam/">GATE-JAM</a>
+        <a href="https://www.freepik.com/vectors/tech-banner"
+          >Tech banner vector created by starline</a
+        >
+      </div>
+      <div class="col-2">
+        <h3>SOCIAL LINKS</h3>
+        <div class="social-links">
+          <a target="_blank" href="https://in.linkedin.com/in/kartikkk"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://wa.me/919427686046"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a target="_blank" href="https://telegram.me/Kikretsu"
+            ><i class="fab fa-telegram"></i
+          ></a>
+          <br />
+          <a target="_blank" href="https://github.com/kk-kartik"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://auth.geeksforgeeks.org/user/kartikkurupaswamy/practice/"
+            ><img src="svg/gfg.png"
+          /></a>
+          <a target="_blank" href="https://www.codechef.com/users/kat777"
+            ><img src="svg/cc.png"
+          /></a>
         </div>
-        <div class="ContactMe" id="contact">
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <h3>Get in Touch</h3>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Email Id" required>
-                <input type="tel" id="phone" placeholder="Phone No." required>
-                <textarea id="msg" rows="5" placeholder="How can I help you?"></textarea>
-                <button type="submit"> Submit</button>
-            </form>
-            
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=7992665&style=0006&nbdigits=5&type=ip&initCount=0"
+            title="Free Counter"
+            alt="web counter"
+            border="0"
+        /></a>
+      </div>
+      <div class="col-3">
+        <h3>CONTACT</h3>
+        <div class="col-3c">
+          <i class="fa-solid fa-location-dot"></i>
+          <span
+            >C-302, Umiam Hostel<br />
+            IITG, GUWAHATI, ASSAM, INDIA</span
+          >
         </div>
-        <div class="footer" id="footer">
-            <div class="col-1">
-                <h3>USEFUL LINKS</h3>
-                <a target="_blank" href="https://iitg.ac.in/">IIT Guwahati</a>
-                <a target="_blank" href="https://iitg.ac.in/maths/">Dept. of Mathematics</a>
-                <a target="_blank" href="https://www.msubaroda.ac.in/">MSU Vadodara</a>
-                <a target="_blank" href="https://iitg.ac.in/gate-jam/">GATE</a>
-                <a></a>
-            </div>
-            <div class="col-2">
-                <h3>SOCIAL LINKS</h3>
-                <div class="social-links">
-                    <a target="_blank" href="https://in.linkedin.com/in/kartikkk"><i class="fab fa-linkedin"></i></a>
-                    <a target="_blank" href="https://wa.me/919427686046"><i class="fab fa-whatsapp"></i></a>
-                    <a target="_blank" href="https://telegram.me/Kikretsu"><i class="fab fa-telegram"></i></a>
-                    <br>
-                    <a target="_blank" href="https://github.com/kk-kartik"><i class="fab fa-github"></i></a>
-                    <a target="_blank" href="https://auth.geeksforgeeks.org/user/kartikkurupaswamy/practice/"><img src="svg/gfg.png"></a>
-                    <a target="_blank" href="https://www.codechef.com/users/kat777"><img src="svg/cc.png"></a>
-                </div>
-                <a href="https://www.hitwebcounter.com" target="_blank">
-    <img src="https://hitwebcounter.com/counter/counter.php?page=7992665&style=0006&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a> 
-  
-            </div>
-            <div class="col-3">
-                <h3>CONTACT</h3>
-                <div class="col-3c">
-                    <i class="fa-solid fa-location-dot"></i> <span>RCL 92/1054,Chanod Colony,<br> G.I.D.C., Vapi, GUJARAT, INDIA</span>
-                </div>
-                <div class="col-3c">
-                    <i class="fa-solid fa-phone"></i> <span>+91-9662164080 <br> +91-9427686046 </span>
-                </div>
-                <div class="col-3c">
-                    <i class="fa-solid fa-at"></i> <span><a href="mailto:kartikchrist@outlook.com">kartikchrist@outlook.com</a></span>
-                </div>
-            </div>
+        <div class="col-3c">
+          <i class="fa-solid fa-phone"></i>
+          <span
+            >+91-9662164080 <br />
+            +91-9427686046
+          </span>
+        </div>
+        <div class="col-3c">
+          <i class="fa-solid fa-at"></i>
+          <span
+            ><a id="amail" href="mailto:kartikchrist@outlook.com"
+              >kartikchrist@outlook.com</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
 
-        </div>
-         
-       
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="javascript/index.js"></script>
-    </body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="javascript/index.js"></script>
+  </body>
 </html>
