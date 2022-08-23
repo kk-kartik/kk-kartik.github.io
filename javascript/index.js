@@ -2,15 +2,15 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currScrollpos = window.pageYOffset;
 
-    if (prevScrollpos < currScrollpos) {
-        document.getElementById("header").style.top = "-80px";
+    if (Math.abs(prevScrollpos - currScrollpos)>10) {
+        document.getElementById("header").style.top = "-800px";
     } else {
         document.getElementById("header").style.top = "0px";
         let progress = setInterval(() => {
             if (window.pageYOffset > 0) {
-                document.getElementById("header").style.top = "-80px";
+                document.getElementById("header").style.top = "-800px";
             }
-        }, 6000);
+        }, 100000);
     }
     prevScrollpos = currScrollpos;
 };
@@ -60,7 +60,7 @@ function plusSlides(m) {
 }
 //var proj=JSON.parse(projects);
 console.log(projects);
-function showSlides(n) {
+async function showSlides(n) {
     if (n < 0) n += prsize;
     n %= prsize;
 
