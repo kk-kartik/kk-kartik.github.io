@@ -8,6 +8,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
   color: rgb(156, 18, 190);
 }
 a {
@@ -19,15 +21,15 @@ a {
 }
 .header {
   width: 100%;
-  background: rgba(252, 251, 251, 0.4);
+  background: transparent;
   position: fixed;
   left: 0;
   z-index: 100;
   margin: 0;
-  padding: 6px 10%;
+  padding: 6px 7%;
 }
 .lgh {
-  height: max(6vh, 4vw);
+  height: 6vmin;
 }
 nav {
   display: flex;
@@ -36,10 +38,10 @@ nav {
   flex-wrap: wrap;
 }
 nav ul li {
-  display: inline-block;
+  display: block;
   list-style: none;
-  font-size: 18px;
-  margin: max(2vh, 1vw) 30px;
+  font-size: 2.5vmin;
+  margin: 1vmin;
   color: black;
   font-weight: bold;
 }
@@ -47,12 +49,47 @@ nav ul li a {
   background: transparent;
   position: relative;
 }
+.sidebar{
+  display: none;
+  height: 100%;
+  width: min(200px,40%);
+  position: fixed;
+  right: 0;
+  z-index: 100;
+  margin: 0;
+  padding: 6px 2px;
+  background-color: rgba(252, 251, 251, 0.4);
+}
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  
+}
+
+.sidebar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 2.5vmin;
+  margin: 1vmin;
+  color: black;
+  font-weight: bold;
+}
+
+/* Change the link color on hover */
+.sidebar li a:hover {
+  background-color: #555;
+  color: white;
+}
 .home {
   position: relative;
   margin-top: 0px;
   width: 100%;
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 15vmax;
   background-color: white;
   background-image: url("../mbg.png");
   background-size: cover;
@@ -64,7 +101,7 @@ nav ul li a {
 .mverse {
   text-align: center;
   color: rgb(144, 53, 162);
-  font-size: min(4vh, 2vw);
+  font-size: 4vmin;
   font-weight: 800;
   font-family: "Satisfy", cursive;
 }
@@ -77,14 +114,14 @@ nav ul li a {
 }
 .typ {
   font-family: "Rye", cursive;
-  font-size: min(8vh, 6vw);
+  font-size: 8vmin;
   color: rgb(156, 18, 190);
 }
 .gallery,
 .about {
   padding: 5vh 3vw;
   background: white;
-  width: 100%;
+  width: 100vw;
   /* min-height: 100vh; */
 }
 
@@ -189,10 +226,14 @@ nav ul li a {
   padding: 8px;
   font-family: "Fira Code", monospace;
 }
-#prdesc {
+#prdesc, .prdesc {
   font-size: 25px;
   padding: 8px;
   font-family: "Fira Code", monospace;
+}
+.prdesc{
+  color: #000;
+  text-justify: distribute;
 }
 #prpoints {
   font-size: 20px;
@@ -235,7 +276,7 @@ nav ul li a {
   width: 80%;
   margin: 50px auto 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 30px;
 }
 .imggallery img {
@@ -292,7 +333,7 @@ form {
   background: rgb(120, 223, 241);
   display: flex;
   flex-direction: column;
-  padding: 1vw 2vw;
+  padding: 2vmin;
   min-height: 40vh;
   width: 600px;
   border-radius: 10px;
@@ -316,8 +357,8 @@ form textarea {
   font-size: 16px;
   border-radius: 10px;
 }
-form button,button {
-  padding: 15px;
+form button,.button {
+  padding: 15px 0;
   background: orangered;
   color: azure;
   font-size: 18px;
@@ -378,7 +419,7 @@ form button,button {
   cursor: pointer;
 }
 .col-3 {
-  font-size: 30px;
+  font-size: 16px;
   margin: 0;
   cursor: pointer;
 }
@@ -390,11 +431,11 @@ form button,button {
   cursor: pointer;
 }
 .col-3 {
-  font-size: 15px;
+  
   letter-spacing: 1px;
 }
 .col-3c i {
-  font-size: 15px;
+  font-size: 16px;
 }
 .col-3c {
   display: flex;
@@ -406,10 +447,4 @@ form button,button {
 }
 .col-3c span {
   padding-left: 10px;
-}
-
-@media screen and (max-width: 900px) {
-  ul{
-    display: none;
-  }
 }

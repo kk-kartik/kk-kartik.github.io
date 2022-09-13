@@ -1,20 +1,15 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currScrollpos = window.pageYOffset;
+function opennav(){
+   var x= document.getElementById("sidenav");
+   var y= document.getElementById("header");
 
-    if (Math.abs(prevScrollpos - currScrollpos)>10) {
-        document.getElementById("header").style.top = "-800px";
-    } else {
-        document.getElementById("header").style.top = "0px";
-        let progress = setInterval(() => {
-            if (window.pageYOffset > 0) {
-                document.getElementById("header").style.top = "-800px";
-            }
-        }, 100000);
-    }
-    prevScrollpos = currScrollpos;
-};
-
+   if(x.style.display=="none"){
+    x.style.display="block";
+    y.style.display="none";
+   }else{
+    x.style.display="none";
+    y.style.display="block";
+   }
+}
 var typed = new Typed(".typ", {
     strings: ["Kartik Kurupaswamy"],
     typeSpeed: 200,
@@ -35,7 +30,7 @@ var projects = [{
 }, {
     name: "Portfolio",
     desc: "My personal portfolio website",
-    p1: ["Its an simple project made using HTML CSS JAVASCRIPT.", "I have made many updates so far", "You can look how far I have came"],
+    p1: ["A portfolio website for myself to showcase my talents.", "I have added a Contact Me form where you can contact me."],
     pic: "../prj/portfolio.png",
     techstack: ["fa-brands fa-html5", "fa-brands fa-css3-alt", "fa-brands fa-node-js"],
     web: "https://kk-kartik.github.io/",
@@ -43,7 +38,7 @@ var projects = [{
 }, {
     name: "Phosphenes 2022",
     desc: "The Roll Number Randomizer",
-    p1: ["Its an app that generates random predefined roll number using javascript.", "It has no buttons, works on the press of a key"],
+    p1: ["It generates random predefined roll number using javascript.", "It has no buttons, works on the press of a key"],
     pic: "../prj/posh.png",
     techstack: ["fa-brands fa-html5", "fa-brands fa-css3-alt", "fa-brands fa-node-js"],
     web: "https://kk-kartik.github.io/freshers2022",
@@ -59,7 +54,6 @@ function plusSlides(m) {
     showSlides(slideIndex += m);
 }
 //var proj=JSON.parse(projects);
-console.log(projects);
 async function showSlides(n) {
     if (n < 0) n += prsize;
     n %= prsize;

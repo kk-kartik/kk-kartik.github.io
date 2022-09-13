@@ -27,14 +27,21 @@
     <div class="header" id="header">
       <nav>
         <img class="lgh" src="svg/logog.png" />
+
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+          <li><a onclick="opennav();"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
+    <div class="sidebar" id="sidenav">
+      <ul>
+        <li><a onclick="opennav();"><i class="fa-solid fa-xmark"></i></a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
     </div>
     <div class="home" id="home">
       <div class="mverse">
@@ -90,7 +97,7 @@
       <div class="hg3">Gallery</div>
       <div class="fullimg" id="fullimg">
         <img src="svg/img.jpg" id="Img" />
-        <span onclick="closeImg()">X</span>
+        <span onclick="closeImg()"><i class="fa-solid fa-xmark"></i></span>
       </div>
       <div class="imggallery">
         <img src="img/img1.jpg" onclick="openImg(this.src)" />
@@ -120,8 +127,8 @@
       </div>
       
       <div class="con2">
-        <div>Wanna know more?? abrakadabra hola come on</div>
-         <div><a style="text-align: center;"target="_blank" href="cv.pdf"><button>View CV</button></a> </div>
+        <div class="prdesc">Wanna know more??</div>
+         <div><a  class="button" style="text-align: center;"target="_blank" href="cv.pdf">View CV</a> </div>
       </div>
     </div>
     <div class="footer" id="footer">
@@ -156,18 +163,19 @@
           <a
             target="_blank"
             href="https://auth.geeksforgeeks.org/user/kartikkurupaswamy/practice/"
-            ><img src="svg/gfg.png"
-          /></a>
+            ><img src="svg/geeksforgeeks.svg"/>
+          </a>
           <a target="_blank" href="https://www.codechef.com/users/kat777"
-            ><img src="svg/cc.png"
-          /></a>
+            ><img src="svg/codechef.svg"/>
+        </a>
         </div>
+        Visitor's Count<br>
         <a href="https://www.hitwebcounter.com" target="_blank">
           <img
             src="https://hitwebcounter.com/counter/counter.php?page=7992665&style=0006&nbdigits=5&type=ip&initCount=0"
             title="Free Counter"
             alt="web counter"
-            border="0"
+            
         /></a>
       </div>
       <div class="col-3">
@@ -196,7 +204,7 @@
           
         </div>
         <div class="col-3c">
-          <i> </i>
+          <i class="fa-sharp fa-solid fa-envelope"></i>
           <span
             ><a id="amail" href="mailto:kartik.kurupaswamy@iitg.ac.in"
               >kartik.kurupaswamy@iitg.ac.in</a
