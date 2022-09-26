@@ -22,11 +22,20 @@ var typed = new Typed(".typ", {
 var projects = [{
     name: "Vote India",
     desc: "Blockchain based Voting system powered by Ethereum",
-    p1: ["Its an AADHAAR based voting system based on blockchain technology.", "The vote is saved in a decentralised database i.e., Goerli Network"],
+    p1: ["It is an online voting system based on Blockchain technology powered by Ethereum. It is a secure, transparent and decentralized way of voting", "The ballots are converted into transactions and securely transacted on Goerli Testnet."],
     pic: "../prj/voteindia.png",
     techstack: ["fa-brands fa-html5", "fa-brands fa-ethereum", "fa-brands fa-css3-alt", "fa-brands fa-node-js"],
     web: "https://kk-kartik.github.io/VoteIndia/",
     code: "https://github.com/kk-kartik/VoteIndia"
+},
+{
+    name: "Scheduling Assistant- IITG",
+    desc: "A personalised timetable manager",
+    p1: ["A scheduling assistant to make personalized lecture schedules and track attendance data.", "Hosted a database for this purpose and connected it to the application via internal API calls."],
+    pic: "../prj/sa.jpg",
+    techstack: ["fa-brands fa-html5", "fa-brands fa-css3-alt", "fa-brands fa-php", "fa-brands fa-react","fa-solid fa-terminal"],
+    web: "https://SamarthPandya.github.io/MySchedule",
+    code: "https://github.com/SamarthPandya/scheduling-assistant"
 }, {
     name: "Portfolio",
     desc: "My personal portfolio website",
